@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewsDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/newsImageContainer"
+        android:background="@drawable/news_detail_title_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/news_detail_title_bg"/>
+
+        <TextView
+            android:id="@+id/tvNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffff"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/tvNewsTitleDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffff"
+            android:layout_above="@id/tvNewsDate"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/newsImageContainer"
+        android:padding="5dp"
+        android:fillViewport="true">
+        <TextView
+            android:padding="8dp"
+            android:id="@+id/tvNewsDesp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description"
+            android:textSize="16sp"/>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/fui_transparent"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:text="Featured News"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_rounded_corner"
+                    android:text="#GDP"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/colorWhite"
+
+                    />
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_rounded_corner"
+                    android:text="#GDP"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="3dp"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_rounded_corner"
+                    android:text="#GDP"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_rounded_corner"
+                    android:text="#GDP"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/colorWhite"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

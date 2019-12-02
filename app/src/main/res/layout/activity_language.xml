@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.fyp.agrifarm.LanguageActivity">
+
+    <TextView
+        android:id="@+id/AgriTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="@string/agriculture"
+        android:textSize="55sp" />
+
+    <Button
+        android:id="@+id/btnLangUrdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/Btn_Lang_Urdu"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnLangEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/Btn_Lang_Eng"
+        android:textAllCaps="false"
+        android:textSize="23sp" />
+
+</RelativeLayout>

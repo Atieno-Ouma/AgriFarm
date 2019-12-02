@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a99d</color>
+    <color name="colorPrimaryDark">#1c935a</color>
+    <color name="colorAccent">#0ADBCC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorVideoBackground">#8C00A99D</color>
+    <color name="colorHourlyForecast">#006837</color>
+    <color name="colorSecondary">#FFC107</color>
+    <color name="colorLoginBackground">#FFFFFF</color>
+</resources>

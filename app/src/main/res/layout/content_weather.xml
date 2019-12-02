@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/ic_plant" />
+
+    <RelativeLayout
+        android:id="@+id/layout_rel"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_weather_main"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/ivWeatherIcon"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="-15dp"
+            android:src="@drawable/ic_w_partly_cloudy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivWeatherIcon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Partly Cloudy"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvWeatherTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22&#xb0;"
+            android:textColor="@color/colorWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvWeatherDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWeatherTemp"
+            android:text="Today"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvWeatherWind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWeatherDay"
+            android:text="Wind 6km/h"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvWeatherHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWeatherWind"
+            android:drawableLeft="@drawable/ic_drop_resized"
+            android:drawablePadding="3dp"
+            android:text="30%"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-25dp"
+        android:background="@drawable/bg_hourly_forecast"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:text="Hourly Forecast"
+            android:textAllCaps="true"
+            android:textColor="@color/colorHourlyForecast"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHourlyForecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDailyForecast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

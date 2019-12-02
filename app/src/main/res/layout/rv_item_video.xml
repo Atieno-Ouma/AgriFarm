@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivVideoThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:elevation="0dp"/>
+
+        <ImageView
+            android:id="@+id/ivVideoIconPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="1dp"
+            android:alpha="0.9"
+            android:src="@drawable/ic_play_video"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:padding="10dp"
+            android:background="@color/colorVideoBackground">
+
+            <TextView
+                android:id="@+id/tvVideoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wheat cutting machine industry Pakistan Sawabi"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

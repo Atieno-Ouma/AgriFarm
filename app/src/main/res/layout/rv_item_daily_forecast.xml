@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="25dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivWeatherDailyIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_w_partly_cloudy_grey"/>
+
+    <TextView
+        android:id="@+id/tvWeatherDailyDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivWeatherDailyIcon"
+        android:textSize="22sp"
+        android:text="SUNDAY"/>
+
+    <TextView
+        android:id="@+id/tvWeatherDailyDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWeatherDailyDay"
+        android:layout_toRightOf="@id/ivWeatherDailyIcon"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="PARTLY CLOUDY"
+        android:drawablePadding="20dp"
+        android:drawableBottom="@drawable/div_weather"/>
+
+    <TextView
+        android:id="@+id/tvWeatherDailyTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:text="30&#xb0;"
+        android:textSize="30sp"/>
+
+
+</RelativeLayout>

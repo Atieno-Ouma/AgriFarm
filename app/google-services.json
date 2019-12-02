@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "978533906176",
+    "firebase_url": "https://agrifarm-58a88.firebaseio.com",
+    "project_id": "agrifarm-58a88",
+    "storage_bucket": "agrifarm-58a88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978533906176:android:b2bcaa72c1a2a4b0bee5e5",
+        "android_client_info": {
+          "package_name": "com.fyp.agrifarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978533906176-e8joo716ms81tkk5qmn9u3ahg4hclo0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.agrifarm",
+            "certificate_hash": "d150aeb4e67ec58a8f2f960372cd3d5e2b8f72c7"
+          }
+        },
+        {
+          "client_id": "978533906176-avkj0r74id6hddstdpifpqr2n7emflin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.agrifarm",
+            "certificate_hash": "ab99f90a9aae6b76a18edc5293c153f9253598a4"
+          }
+        },
+        {
+          "client_id": "978533906176-8ebtujv0q99dvvn3hkirlf67ii562d66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.agrifarm",
+            "certificate_hash": "dcdcd9116e53170af9719a95d46190a39276cb86"
+          }
+        },
+        {
+          "client_id": "978533906176-ehngo9gpd5dufhka3br2itgr2l9rho97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.agrifarm",
+            "certificate_hash": "7695dca2fad2f64919fe44e794e70f0bbeff7d72"
+          }
+        },
+        {
+          "client_id": "978533906176-cs9qunhb4332nddrmt6o4k3k16k7l0is.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-48cvCydgKRwZKC5tbumtoX0S_vBBOeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978533906176-cs9qunhb4332nddrmt6o4k3k16k7l0is.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

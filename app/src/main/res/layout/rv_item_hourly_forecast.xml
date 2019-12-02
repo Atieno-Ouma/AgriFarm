@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvWeatherHourlyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="1 PM"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_w_partly_cloudy_grey"/>
+
+    <TextView
+        android:id="@+id/tvWeatherHourlyTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="30"
+        android:textSize="20sp"/>
+
+</LinearLayout>
